@@ -1,12 +1,15 @@
-package com.service;
+package proj.service;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.model.Segment;
+import proj.model.Segment;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -32,14 +35,6 @@ public class SegmentService {
         return gson.fromJson(json, Segment.class);
     }
 
-    // -------------------------------------------------------------------------
-    // Get the leaderboard for a segment
-    // -------------------------------------------------------------------------
-    // public SegmentLeaderboard getLeaderboard(long segmentId) throws IOException {
-    //     String url = BASE_URL + "/segments/" + segmentId + "/leaderboard?per_page=10";
-    //     String json = get(url);
-    //     return gson.fromJson(json, SegmentLeaderboard.class);
-    // }
 
     // -------------------------------------------------------------------------
     // Explore segments in a bounding box (lat/lng SW and NE corners)
@@ -56,6 +51,34 @@ public class SegmentService {
         SegmentExploreResponse response = gson.fromJson(json, SegmentExploreResponse.class);
         return response.segments;
     }
+
+    
+    public List<Segment> exploreSegmentsTiled(
+        double swLat, double swLng,
+        double neLat, double neLng,
+        String activityType,
+        int gridRows, int gridCols) throws IOException, InterruptedException {
+
+    Map<Long, Segment> unique = new LinkedHashMap<>();
+    double latStep = (neLat - swLat) / gridRows;
+    double lngStep = (neLng - swLng) / gridCols;
+
+    for (int r = 0; r < gridRows; r++) {
+        for (int c = 0; c < gridCols; c++) {
+            double tileSW_Lat = swLat + r * latStep;
+            double tileSW_Lng = swLng + c * lngStep;
+            double tileNE_Lat = tileSW_Lat + latStep;
+            double tileNE_Lng = tileSW_Lng + lngStep;
+
+            List<Segment> tile = exploreSegments(
+                tileSW_Lat, tileSW_Lng, tileNE_Lat, tileNE_Lng, activityType);
+            tile.forEach(s -> unique.put(s.id, s)); // deduplicate by ID
+
+            Thread.sleep(1000); // respect rate limits (100 req/15min)
+        }
+    }
+    return new ArrayList<>(unique.values());
+}
 
     // -------------------------------------------------------------------------
     // Get the authenticated athlete's starred segments

@@ -1,4 +1,4 @@
-package com.model;
+package proj.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -26,12 +26,19 @@ public class Segment {
     public String city;
     public String state;
     public String country;
+    @SerializedName("map")
+    public SegmentMap map;
+
+    public static class SegmentMap {
+        public String polyline;          // encoded Google polyline
+    }
 
     @Override
     public String toString() {
         return String.format(
-            "Segment [id=%d, name='%s', type=%s, distance=%.0fm, grade=%.1f%%, efforts=%d, athletes=%d]",
-            id, name, activityType, distance, averageGrade, effortCount, athleteCount
+            "Segment [id=%d, name='%s', type=%s, distance=%.0fm, grade=%.1f%%, efforts=%d, athletes=%d , summary_polyline=%s]",
+            id, name, activityType, distance, averageGrade, effortCount, athleteCount, map != null ? map.polyline : "N/A"
         );
     }
+    
 }

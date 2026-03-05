@@ -36,6 +36,12 @@
             <artifactId>dotenv-java</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <!-- Polyline Decoder -->
+        <dependency>
+            <groupId>com.google.maps</groupId>
+            <artifactId>google-maps-services</artifactId>
+            <version>2.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -47,7 +53,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.strava.Main</mainClass>
+                            <mainClass>proj.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

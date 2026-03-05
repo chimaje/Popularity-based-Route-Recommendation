@@ -1,4 +1,4 @@
-package com.auth;
+package proj.auth;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
