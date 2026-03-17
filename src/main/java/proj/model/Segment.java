@@ -1,6 +1,9 @@
 package proj.model;
 
+import java.util.List;
+
 import com.google.gson.annotations.SerializedName;
+import com.google.maps.model.LatLng;
 
 public class Segment {
 
@@ -31,13 +34,14 @@ public class Segment {
 
     public static class SegmentMap {
         public String polyline;          // encoded Google polyline
+        public List<LatLng> path; 
     }
 
     @Override
     public String toString() {
         return String.format(
-            "Segment [id=%d, name='%s', type=%s, distance=%.0fm, grade=%.1f%%, efforts=%d, athletes=%d , summary_polyline=%s]",
-            id, name, activityType, distance, averageGrade, effortCount, athleteCount, map != null ? map.polyline : "N/A"
+            "Segment [id=%d, name='%s', type=%s, distance=%.0fm, grade=%.1f%%, efforts=%d, athletes=%d , polyline=%s , path=%s]",
+            id, name, activityType, distance, averageGrade, effortCount, athleteCount, map != null ? map.polyline : "N/A", map != null ? map.path : "N/A"
         );
     }
     

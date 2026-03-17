@@ -1,82 +1,122 @@
 package proj;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.gson.*;
 import com.google.maps.model.LatLng;
 
 import proj.auth.Stravaauth;
 import proj.model.Segment;
 import proj.service.SegmentService;
 import proj.util.PolylineDecoder;
+import proj.util.Segmentdatastore;
 
+/**
+ * Fetches popular running segments from Strava API, caches them locally,
+ * and decodes polyline data for route visualization.
+ */
 public class Main {
 
     public static void main(String[] args) throws Exception {
         Stravaauth auth = new Stravaauth();
 
-        // Run with --auth to get your access token setup instructions
         if (args.length > 0 && args[0].equals("--auth")) {
             auth.printAuthorizationUrl();
             return;
         }
 
-        SegmentService segment = new SegmentService(auth.getAccessToken());
+        SegmentService segmentService = new SegmentService(auth.getAccessToken());
+        Segmentdatastore dataStore = new Segmentdatastore();
 
-        // -----------------------------------------------------------------------
-        // Example 1: Explore segments near Leeds
-        // Change these coordinates to your area of interest!
-        // -----------------------------------------------------------------------
-        System.out.println("=== Exploring segments near Leeds ===");
-        List<Segment> segments = segment.exploreSegments(
-            53.739, -1.620,   // SW corner (roughly Morley/Beeston)
-            53.870, -1.460,   // NE corner (roughly Roundhay/Seacroft)
-            "running"
-        );
-        segments.forEach(System.out::println);
+        if (dataStore.cacheExists()) {
+            loadAndDisplayCache(dataStore);
+        } else {
+            fetchAndProcessSegments(segmentService, dataStore);
+        }
+    }
 
-        System.out.println();
+    /**
+     * Loads and displays cached segment data.
+     */
+    private static void loadAndDisplayCache(Segmentdatastore dataStore) throws IOException {
+        System.out.println("=== Loading segments from cache ===");
+        JsonObject cached = dataStore.load();
+        JsonObject metadata = cached.getAsJsonObject("metadata");
+        JsonArray segs = cached.getAsJsonArray("segments");
 
-        // for (Segment s : segments) {
-        //     Segment full = segment.getSegment(s.id);
-        //     System.out.println("RAW: " + new com.google.gson.Gson().toJson(full));
-        //     Thread.sleep(500);
-        // }
+        System.out.println("Region:         " + metadata.get("region").getAsString());
+        System.out.println("Activity type:  " + metadata.get("activity_type").getAsString());
+        System.out.println("Collected at:   " + metadata.get("collected_at").getAsString());
+        System.out.println("Total segments: " + segs.size());
 
+        if (segs.size() > 0) {
+            System.out.println("\n=== Sample segment ===");
+            System.out.println(segs.get(0));
+        }
+    }
 
-        // -----------------------------------------------------------------------
-        //  Explore segments in Leeds using tiled approach (4x4 grid = 16 API calls)
-        // -----------------------------------------------------------------------
+    /**
+     * Fetches segments from Strava API, processes them, and saves to cache.
+     */
+    private static void fetchAndProcessSegments(SegmentService segmentService, Segmentdatastore dataStore) throws InterruptedException, IOException {
+        System.out.println("=== Fetching from Strava API ===");
+
+        List<Segment> allSegments = exploreSegmentsNearLeeds(segmentService);
+        List<Segment> detailed = fetchDetailedSegments(segmentService, allSegments);
+        decodePolylines(detailed);
+
+        System.out.println("=== Displaying segments with decoded polyline data ===");
+        detailed.forEach(System.out::println);
+
+        dataStore.save(detailed, "Leeds", "running");
+
+        System.out.println("\nData collection complete.");
+        System.out.println("Saved to: " + dataStore.getOutputFile());
+    }
+
+    /**
+     * Explores segments in Leeds using a 2x2 tiled grid approach.
+     */
+    private static List<Segment> exploreSegmentsNearLeeds(SegmentService segmentService) throws IOException, InterruptedException {
         System.out.println("=== Exploring segments in Leeds using tiled approach ===");
-        List<Segment> allSegments = segment.exploreSegmentsTiled(
-                53.739, -1.620, 53.870, -1.460, "running", 2, 2  // 16 API calls
-            );
+        List<Segment> allSegments = segmentService.exploreSegmentsTiled(
+            53.739, -1.620, 53.870, -1.460, "running", 2, 2
+        );
+        // allSegments.forEach(System.out::println);
+        // System.out.println();
+        return allSegments;
+    }
 
-        allSegments.forEach(System.out::println);
-
+    /**
+     * Fetches detailed segment information including polyline data.
+     * Includes 500ms delay between API calls for rate limiting.
+     */
+    private static List<Segment> fetchDetailedSegments(SegmentService segmentService, List<Segment> allSegments) throws InterruptedException, IOException {
+        System.out.println("=== Getting segment with polyline data ===");
+        List<Segment> detailed = new ArrayList<>();
+        for (Segment s : allSegments) {
+            detailed.add(segmentService.getSegment(s.id));
+            Thread.sleep(500);
+        }
+        detailed.forEach(System.out::println);
         System.out.println();
-        // -----------------------------------------------------------------------
-        // Example 2: Get a segments with polyline data
-        // -----------------------------------------------------------------------
-            System.out.println("=== Getting segment with polyline data ===");
-            List<Segment> detailed = new ArrayList<>();
-            for (Segment s : allSegments) {
-                detailed.add(segment.getSegment(s.id));
-                Thread.sleep(500);
-            }
-            detailed.forEach(System.out::println);
+        return detailed;
+    }
 
-        System.out.println();
-
-        //for decoding polylines
-        // List<LatLng> path = PolylineDecoder.decode(segment.map.polyline);
-            for (Segment s : detailed) {
+    /**
+     * Decodes polyline strings into coordinate paths for route visualization.
+     */
+    private static void decodePolylines(List<Segment> detailed) {
+        for (Segment s : detailed) {
             if (s.map != null && s.map.polyline != null) {
                 List<LatLng> path = PolylineDecoder.decode(s.map.polyline);
                 System.out.println("Segment: " + s.name);
                 System.out.println("  Points: " + path);
-                 }
+                s.map.path = path;
+                s.map.polyline = null;
             }
+        }
     }
-
 }

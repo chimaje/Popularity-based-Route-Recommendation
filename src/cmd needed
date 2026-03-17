@@ -1,0 +1,39 @@
+To get access token 
+
+mvn compile exec:java -Dexec.mainClass=com.Main -Dexec.args="--auth"
+
+
+Command to get the access token  paste in .env
+
+curl -X POST https://www.strava.com/oauth/token \    
+ -d client_id=208101 \ 
+  -d client_secret=dba3ff0ee1836a5eeb236e2d9745df2fcbe2c0c2 \  
+  -d code= code gotten from previous cmd \ 
+   -d grant_type=authorization_code
+
+
+Trying to return polyline but tried using summaryPolyline instead of polyline
+
+now need to decode polyline to get the coordinates of the segment. 
+
+the polyline is encoded using Google's polyline encoding algorithm
+
+next stage 
+saving the data from the api with the decoded polyline into a json
+with the appropriate formatand structure as well as data type to be able to consrtuct routes
+
+
+What is Effort_count
+Based on the API docs and the segment effort endpoint, an effort is one instance of one athlete completing the segment — so if you run the same segment 10 times, that counts as 10 efforts. effort_count is the total of all these completions across all athletes ever.
+
+What is athlete_count
+athlete_count is the total number of distinct athletes who have completed it at least once
+
+
+
+use this when trying to consrtuct the graph
+This directly reflects the mathematical definition of a graph G = (V, E) where V = nodes and E = edges, which is the standard representation used in graph theory literature (Cormen et al., Introduction to Algorithms). It also matches how graph libraries like JGraphT expect data — you add nodes first, then edges referencing those node IDs.
+Graph structure (nodes/edges): Cormen, T.H. et al. (2022) Introduction to Algorithms, 4th ed. MIT Press
+Adjacency list vs matrix: same source, Chapter 20
+Popularity-based edge weighting: Wu et al. (2020) — already in your literature review
+JSON as data interchange: ECMA-404 standard at https://www.ecma-international.org/publications-and-standards/standards/ecma-404/
