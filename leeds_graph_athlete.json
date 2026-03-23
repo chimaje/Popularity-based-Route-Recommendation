@@ -1,0 +1,3070 @@
+{
+  "metadata": {
+    "region": "Leeds",
+    "activity_type": "running",
+    "weight_type": "ATHLETE",
+    "intersection_threshold_m": 15.0,
+    "total_nodes": 206,
+    "total_edges": 182
+  },
+  "nodes": [
+    {
+      "node_id": "N_53.7996_-1.5514",
+      "lat": 53.79958,
+      "lng": -1.55139,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7996_-1.5505",
+      "lat": 53.79964,
+      "lng": -1.55051,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7956_-1.5641",
+      "lat": 53.79561,
+      "lng": -1.56408,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7948_-1.5615",
+      "lat": 53.79481,
+      "lng": -1.56147,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8033_-1.5897",
+      "lat": 53.80326,
+      "lng": -1.58967,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8034_-1.5907",
+      "lat": 53.80337,
+      "lng": -1.59071,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5908",
+      "lat": 53.80335,
+      "lng": -1.5908,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8033_-1.5909",
+      "lat": 53.80334,
+      "lng": -1.59095,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5913",
+      "lat": 53.80338,
+      "lng": -1.59133,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5914",
+      "lat": 53.8034,
+      "lng": -1.59145,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5916",
+      "lat": 53.80339,
+      "lng": -1.59162,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5917",
+      "lat": 53.80341,
+      "lng": -1.59167,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5924",
+      "lat": 53.8034,
+      "lng": -1.59242,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5925",
+      "lat": 53.80339,
+      "lng": -1.59252,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5926",
+      "lat": 53.80339,
+      "lng": -1.59263,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8035_-1.5930",
+      "lat": 53.8035,
+      "lng": -1.593,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8035_-1.5933",
+      "lat": 53.80349,
+      "lng": -1.59331,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8035_-1.5934",
+      "lat": 53.80353,
+      "lng": -1.59337,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8036_-1.5934",
+      "lat": 53.80355,
+      "lng": -1.59344,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8036_-1.5935",
+      "lat": 53.80356,
+      "lng": -1.59355,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8037_-1.5942",
+      "lat": 53.80367,
+      "lng": -1.59422,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8038_-1.5947",
+      "lat": 53.80382,
+      "lng": -1.59469,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8019_-1.5770",
+      "lat": 53.80189,
+      "lng": -1.57701,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8003_-1.5717",
+      "lat": 53.80031,
+      "lng": -1.57171,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7650_-1.5820",
+      "lat": 53.76496,
+      "lng": -1.58202,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7531_-1.5993",
+      "lat": 53.75305,
+      "lng": -1.5993,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7941_-1.5596",
+      "lat": 53.79405,
+      "lng": -1.55962,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7972_-1.5673",
+      "lat": 53.79715,
+      "lng": -1.56727,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8043_-1.5956",
+      "lat": 53.80429,
+      "lng": -1.59562,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8037_-1.5943",
+      "lat": 53.80369,
+      "lng": -1.59427,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8035_-1.5927",
+      "lat": 53.8035,
+      "lng": -1.59271,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8035_-1.5923",
+      "lat": 53.80347,
+      "lng": -1.59235,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8034_-1.5915",
+      "lat": 53.80344,
+      "lng": -1.5915,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8033_-1.5896",
+      "lat": 53.80325,
+      "lng": -1.58959,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8022_-1.5806",
+      "lat": 53.8022,
+      "lng": -1.58062,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7774_-1.5841",
+      "lat": 53.77738,
+      "lng": -1.58414,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7773_-1.5703",
+      "lat": 53.77734,
+      "lng": -1.57026,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7487_-1.6103",
+      "lat": 53.74865,
+      "lng": -1.61032,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7463_-1.6163",
+      "lat": 53.74628,
+      "lng": -1.61628,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7455_-1.5930",
+      "lat": 53.74551,
+      "lng": -1.59301,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7455_-1.5927",
+      "lat": 53.7455,
+      "lng": -1.59273,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7843_-1.5232",
+      "lat": 53.7843,
+      "lng": -1.5232,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7819_-1.5223",
+      "lat": 53.78187,
+      "lng": -1.52227,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7820_-1.5222",
+      "lat": 53.78196,
+      "lng": -1.52219,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7777_-1.5121",
+      "lat": 53.77774,
+      "lng": -1.51213,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7779_-1.5122",
+      "lat": 53.77793,
+      "lng": -1.51218,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7781_-1.5123",
+      "lat": 53.7781,
+      "lng": -1.51234,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7798_-1.5147",
+      "lat": 53.77977,
+      "lng": -1.51472,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7805_-1.5161",
+      "lat": 53.78049,
+      "lng": -1.51607,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7810_-1.5167",
+      "lat": 53.78097,
+      "lng": -1.51667,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7826_-1.5200",
+      "lat": 53.78259,
+      "lng": -1.51996,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7827_-1.5202",
+      "lat": 53.78271,
+      "lng": -1.52023,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7830_-1.5207",
+      "lat": 53.78299,
+      "lng": -1.52072,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7830_-1.5210",
+      "lat": 53.78301,
+      "lng": -1.52098,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7908_-1.5287",
+      "lat": 53.79081,
+      "lng": -1.52869,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7887_-1.5264",
+      "lat": 53.78866,
+      "lng": -1.5264,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7886_-1.5264",
+      "lat": 53.78861,
+      "lng": -1.52641,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7885_-1.5264",
+      "lat": 53.78846,
+      "lng": -1.52643,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7884_-1.5264",
+      "lat": 53.78842,
+      "lng": -1.52644,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7883_-1.5264",
+      "lat": 53.78825,
+      "lng": -1.52641,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7881_-1.5263",
+      "lat": 53.78807,
+      "lng": -1.5263,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7880_-1.5262",
+      "lat": 53.78797,
+      "lng": -1.52621,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7877_-1.5258",
+      "lat": 53.78765,
+      "lng": -1.52578,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7875_-1.5257",
+      "lat": 53.78754,
+      "lng": -1.52568,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7875_-1.5256",
+      "lat": 53.78746,
+      "lng": -1.52565,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7873_-1.5255",
+      "lat": 53.78733,
+      "lng": -1.52554,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.5254",
+      "lat": 53.78706,
+      "lng": -1.52539,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7869_-1.5252",
+      "lat": 53.78686,
+      "lng": -1.52516,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7866_-1.5249",
+      "lat": 53.78663,
+      "lng": -1.52486,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7872_-1.4668",
+      "lat": 53.78716,
+      "lng": -1.46684,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7872_-1.4666",
+      "lat": 53.7872,
+      "lng": -1.46658,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7873_-1.4664",
+      "lat": 53.78728,
+      "lng": -1.46641,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7880_-1.4658",
+      "lat": 53.78804,
+      "lng": -1.4658,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7882_-1.4657",
+      "lat": 53.78821,
+      "lng": -1.46573,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7883_-1.4658",
+      "lat": 53.7883,
+      "lng": -1.46575,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7884_-1.4659",
+      "lat": 53.78841,
+      "lng": -1.46586,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7885_-1.4659",
+      "lat": 53.78845,
+      "lng": -1.46592,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7885_-1.4662",
+      "lat": 53.78848,
+      "lng": -1.46623,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7885_-1.4663",
+      "lat": 53.78848,
+      "lng": -1.46629,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7885_-1.4666",
+      "lat": 53.78846,
+      "lng": -1.46658,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7884_-1.4668",
+      "lat": 53.78836,
+      "lng": -1.46677,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7882_-1.4669",
+      "lat": 53.78823,
+      "lng": -1.46689,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7876_-1.4674",
+      "lat": 53.78756,
+      "lng": -1.46739,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7874_-1.4674",
+      "lat": 53.78741,
+      "lng": -1.46743,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7873_-1.4673",
+      "lat": 53.78728,
+      "lng": -1.46735,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7872_-1.4672",
+      "lat": 53.78718,
+      "lng": -1.4672,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.4669",
+      "lat": 53.78711,
+      "lng": -1.46695,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7882_-1.4659",
+      "lat": 53.7882,
+      "lng": -1.46585,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7884_-1.4660",
+      "lat": 53.7884,
+      "lng": -1.46597,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7884_-1.4666",
+      "lat": 53.78841,
+      "lng": -1.46662,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7883_-1.4668",
+      "lat": 53.78831,
+      "lng": -1.46679,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7881_-1.4670",
+      "lat": 53.78812,
+      "lng": -1.46697,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7876_-1.4673",
+      "lat": 53.78761,
+      "lng": -1.46735,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7872_-1.4673",
+      "lat": 53.78718,
+      "lng": -1.4673,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.4671",
+      "lat": 53.78711,
+      "lng": -1.46711,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.4668",
+      "lat": 53.78708,
+      "lng": -1.4668,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7872_-1.4665",
+      "lat": 53.78716,
+      "lng": -1.46649,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7873_-1.4663",
+      "lat": 53.78733,
+      "lng": -1.46629,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7880_-1.4659",
+      "lat": 53.78803,
+      "lng": -1.46585,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7882_-1.4658",
+      "lat": 53.78823,
+      "lng": -1.4658,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7883_-1.4669",
+      "lat": 53.78827,
+      "lng": -1.46686,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7874_-1.4675",
+      "lat": 53.78737,
+      "lng": -1.46746,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.4670",
+      "lat": 53.78709,
+      "lng": -1.46701,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.4667",
+      "lat": 53.78709,
+      "lng": -1.4667,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7872_-1.4664",
+      "lat": 53.7872,
+      "lng": -1.46643,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7874_-1.4663",
+      "lat": 53.78735,
+      "lng": -1.46626,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7881_-1.4658",
+      "lat": 53.78811,
+      "lng": -1.46582,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7889_-1.5268",
+      "lat": 53.78891,
+      "lng": -1.52678,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7887_-1.5266",
+      "lat": 53.78865,
+      "lng": -1.52657,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7884_-1.5263",
+      "lat": 53.78838,
+      "lng": -1.52629,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7883_-1.5262",
+      "lat": 53.78829,
+      "lng": -1.52624,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7880_-1.5261",
+      "lat": 53.78796,
+      "lng": -1.52608,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7876_-1.5258",
+      "lat": 53.78763,
+      "lng": -1.52585,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7875_-1.5258",
+      "lat": 53.78748,
+      "lng": -1.52579,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7874_-1.5257",
+      "lat": 53.78735,
+      "lng": -1.52567,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7873_-1.5256",
+      "lat": 53.78731,
+      "lng": -1.52562,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7871_-1.5255",
+      "lat": 53.78711,
+      "lng": -1.52546,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7869_-1.5253",
+      "lat": 53.78688,
+      "lng": -1.52526,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7867_-1.5249",
+      "lat": 53.78673,
+      "lng": -1.52494,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7819_-1.5222",
+      "lat": 53.78194,
+      "lng": -1.52217,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7820_-1.5221",
+      "lat": 53.78204,
+      "lng": -1.52209,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7831_-1.5209",
+      "lat": 53.78307,
+      "lng": -1.52091,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7831_-1.5208",
+      "lat": 53.78307,
+      "lng": -1.52085,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7828_-1.5202",
+      "lat": 53.78279,
+      "lng": -1.52018,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7827_-1.5200",
+      "lat": 53.78272,
+      "lng": -1.51997,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7826_-1.5198",
+      "lat": 53.78264,
+      "lng": -1.51978,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7805_-1.5160",
+      "lat": 53.78053,
+      "lng": -1.516,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7797_-1.5145",
+      "lat": 53.77972,
+      "lng": -1.51451,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7782_-1.5122",
+      "lat": 53.77816,
+      "lng": -1.51223,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7780_-1.5121",
+      "lat": 53.77801,
+      "lng": -1.51212,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7778_-1.5120",
+      "lat": 53.77783,
+      "lng": -1.51203,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.7761_-1.5070",
+      "lat": 53.77605,
+      "lng": -1.50701,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7710_-1.4756",
+      "lat": 53.77096,
+      "lng": -1.47561,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7661_-1.4772",
+      "lat": 53.76608,
+      "lng": -1.4772,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8000_-1.4824",
+      "lat": 53.80002,
+      "lng": -1.48236,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7966_-1.4736",
+      "lat": 53.79662,
+      "lng": -1.47356,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.7439_-1.5016",
+      "lat": 53.7439,
+      "lng": -1.5016,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.7443_-1.4916",
+      "lat": 53.74425,
+      "lng": -1.49163,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8313_-1.5909",
+      "lat": 53.83131,
+      "lng": -1.59087,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8316_-1.5909",
+      "lat": 53.83156,
+      "lng": -1.59094,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8670_-1.5501",
+      "lat": 53.86701,
+      "lng": -1.55008,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8670_-1.5499",
+      "lat": 53.86701,
+      "lng": -1.54995,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8063_-1.5993",
+      "lat": 53.80629,
+      "lng": -1.5993,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8055_-1.5973",
+      "lat": 53.80552,
+      "lng": -1.5973,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8426_-1.5843",
+      "lat": 53.84262,
+      "lng": -1.58435,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8405_-1.5862",
+      "lat": 53.84051,
+      "lng": -1.58625,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8153_-1.5629",
+      "lat": 53.81525,
+      "lng": -1.56286,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8180_-1.5739",
+      "lat": 53.81796,
+      "lng": -1.57389,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8182_-1.5741",
+      "lat": 53.81823,
+      "lng": -1.57407,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8183_-1.5742",
+      "lat": 53.81831,
+      "lng": -1.5742,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8195_-1.5761",
+      "lat": 53.81953,
+      "lng": -1.57615,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8113_-1.5575",
+      "lat": 53.81127,
+      "lng": -1.55753,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8138_-1.5608",
+      "lat": 53.81383,
+      "lng": -1.56082,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8192_-1.5750",
+      "lat": 53.81923,
+      "lng": -1.57496,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8183_-1.5741",
+      "lat": 53.81828,
+      "lng": -1.57412,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8181_-1.5740",
+      "lat": 53.81813,
+      "lng": -1.57398,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8181_-1.5739",
+      "lat": 53.81807,
+      "lng": -1.57387,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8181_-1.5737",
+      "lat": 53.81805,
+      "lng": -1.57374,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8175_-1.5713",
+      "lat": 53.81751,
+      "lng": -1.57129,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8151_-1.6088",
+      "lat": 53.81508,
+      "lng": -1.60876,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8159_-1.6096",
+      "lat": 53.81587,
+      "lng": -1.6096,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8527_-1.6124",
+      "lat": 53.85272,
+      "lng": -1.61243,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8498_-1.6069",
+      "lat": 53.84984,
+      "lng": -1.60687,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8426_-1.5456",
+      "lat": 53.8426,
+      "lng": -1.54558,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8331_-1.5603",
+      "lat": 53.83309,
+      "lng": -1.56031,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8126_-1.4903",
+      "lat": 53.81262,
+      "lng": -1.49027,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8099_-1.4892",
+      "lat": 53.80993,
+      "lng": -1.4892,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8549_-1.4844",
+      "lat": 53.85491,
+      "lng": -1.48444,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8485_-1.4711",
+      "lat": 53.84854,
+      "lng": -1.47108,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8484_-1.4710",
+      "lat": 53.84838,
+      "lng": -1.471,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8483_-1.4709",
+      "lat": 53.84832,
+      "lng": -1.47092,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8473_-1.4702",
+      "lat": 53.8473,
+      "lng": -1.47018,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8465_-1.4697",
+      "lat": 53.84654,
+      "lng": -1.46975,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8460_-1.4693",
+      "lat": 53.84598,
+      "lng": -1.46935,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8456_-1.4692",
+      "lat": 53.84555,
+      "lng": -1.46924,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8454_-1.4691",
+      "lat": 53.84541,
+      "lng": -1.46914,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8452_-1.4691",
+      "lat": 53.84523,
+      "lng": -1.46914,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8449_-1.4692",
+      "lat": 53.84494,
+      "lng": -1.46919,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8447_-1.4692",
+      "lat": 53.84473,
+      "lng": -1.46918,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8548_-1.4845",
+      "lat": 53.85481,
+      "lng": -1.48447,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8356_-1.4968",
+      "lat": 53.83563,
+      "lng": -1.49678,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8390_-1.4966",
+      "lat": 53.83897,
+      "lng": -1.49664,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8429_-1.5327",
+      "lat": 53.84292,
+      "lng": -1.53275,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8426_-1.5047",
+      "lat": 53.84263,
+      "lng": -1.50466,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8295_-1.5260",
+      "lat": 53.82951,
+      "lng": -1.52604,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8294_-1.5222",
+      "lat": 53.82941,
+      "lng": -1.5222,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8317_-1.4939",
+      "lat": 53.83174,
+      "lng": -1.49388,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8346_-1.4967",
+      "lat": 53.83459,
+      "lng": -1.49671,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8290_-1.5052",
+      "lat": 53.82899,
+      "lng": -1.50522,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8326_-1.5044",
+      "lat": 53.83258,
+      "lng": -1.50445,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8491_-1.5250",
+      "lat": 53.84906,
+      "lng": -1.52505,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8497_-1.5121",
+      "lat": 53.84965,
+      "lng": -1.51207,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8582_-1.5098",
+      "lat": 53.85815,
+      "lng": -1.50981,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8577_-1.5018",
+      "lat": 53.85772,
+      "lng": -1.50184,
+      "type": "SEGMENT_END"
+    },
+    {
+      "node_id": "N_53.8487_-1.4711",
+      "lat": 53.84867,
+      "lng": -1.47106,
+      "type": "SEGMENT_START"
+    },
+    {
+      "node_id": "N_53.8485_-1.4710",
+      "lat": 53.8485,
+      "lng": -1.47097,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8483_-1.4708",
+      "lat": 53.84826,
+      "lng": -1.47082,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8474_-1.4703",
+      "lat": 53.84736,
+      "lng": -1.47028,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8466_-1.4697",
+      "lat": 53.84655,
+      "lng": -1.46971,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8461_-1.4694",
+      "lat": 53.84609,
+      "lng": -1.46941,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8454_-1.4693",
+      "lat": 53.84536,
+      "lng": -1.46926,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8453_-1.4692",
+      "lat": 53.8453,
+      "lng": -1.46919,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8452_-1.4692",
+      "lat": 53.84516,
+      "lng": -1.46919,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8450_-1.4691",
+      "lat": 53.84495,
+      "lng": -1.46914,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8448_-1.4691",
+      "lat": 53.84478,
+      "lng": -1.46912,
+      "type": "INTERSECTION"
+    },
+    {
+      "node_id": "N_53.8445_-1.4691",
+      "lat": 53.84454,
+      "lng": -1.46913,
+      "type": "SEGMENT_END"
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "N_53.7996_-1.5514",
+      "to_node": "N_53.7996_-1.5505",
+      "strava_segment_id": 2758173,
+      "segment_name": "Leeds Abbey Dash",
+      "effort_count": 3801,
+      "athlete_count": 3752,
+      "distance_metres": 10113.820074690926,
+      "weight": 2.664535038635758E-4
+    },
+    {
+      "from_node": "N_53.7956_-1.5641",
+      "to_node": "N_53.7948_-1.5615",
+      "strava_segment_id": 14936564,
+      "segment_name": "Finishing sprint to City Island",
+      "effort_count": 279838,
+      "athlete_count": 35946,
+      "distance_metres": 193.7748934882976,
+      "weight": 2.7818733134893038E-5
+    },
+    {
+      "from_node": "N_53.8033_-1.5897",
+      "to_node": "N_53.8034_-1.5907",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 73.93904970108699,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5907",
+      "to_node": "N_53.8034_-1.5908",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 3.466532264980888,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5908",
+      "to_node": "N_53.8033_-1.5909",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 9.165343374052561,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8033_-1.5909",
+      "to_node": "N_53.8034_-1.5913",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 26.0873093131389,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5913",
+      "to_node": "N_53.8034_-1.5914",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 8.187847075276641,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5914",
+      "to_node": "N_53.8034_-1.5916",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 11.21863840254497,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5916",
+      "to_node": "N_53.8034_-1.5917",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 3.9656174120384775,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5917",
+      "to_node": "N_53.8034_-1.5924",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 45.528042344688686,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5924",
+      "to_node": "N_53.8034_-1.5925",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 6.660182321403184,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5925",
+      "to_node": "N_53.8034_-1.5926",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 3.466530039907693,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5926",
+      "to_node": "N_53.8035_-1.5930",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 24.265694702907915,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5930",
+      "to_node": "N_53.8035_-1.5933",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 19.555921414140638,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5933",
+      "to_node": "N_53.8035_-1.5934",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 5.94193475615627,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5934",
+      "to_node": "N_53.8036_-1.5934",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 5.679552101448198,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8036_-1.5934",
+      "to_node": "N_53.8036_-1.5935",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 7.223345635876473,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8036_-1.5935",
+      "to_node": "N_53.8037_-1.5942",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 51.54927123296177,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8037_-1.5942",
+      "to_node": "N_53.8038_-1.5947",
+      "strava_segment_id": 8243576,
+      "segment_name": "bump to bump",
+      "effort_count": 193232,
+      "athlete_count": 29165,
+      "distance_metres": 35.0818642163465,
+      "weight": 3.428649797709662E-5
+    },
+    {
+      "from_node": "N_53.8019_-1.5770",
+      "to_node": "N_53.8003_-1.5717",
+      "strava_segment_id": 12804997,
+      "segment_name": "Post to post return",
+      "effort_count": 275219,
+      "athlete_count": 35261,
+      "distance_metres": 415.48556243254393,
+      "weight": 2.8359140150870626E-5
+    },
+    {
+      "from_node": "N_53.7650_-1.5820",
+      "to_node": "N_53.7531_-1.5993",
+      "strava_segment_id": 3576022,
+      "segment_name": "Churwell hill to the top",
+      "effort_count": 6981,
+      "athlete_count": 1201,
+      "distance_metres": 1794.8692598027058,
+      "weight": 8.319467554076539E-4
+    },
+    {
+      "from_node": "N_53.7941_-1.5596",
+      "to_node": "N_53.7972_-1.5673",
+      "strava_segment_id": 12430490,
+      "segment_name": "JLD Bench to \u0027lock-top\u0027",
+      "effort_count": 250004,
+      "athlete_count": 32963,
+      "distance_metres": 627.5740380301409,
+      "weight": 3.0336124256764954E-5
+    },
+    {
+      "from_node": "N_53.8043_-1.5956",
+      "to_node": "N_53.8037_-1.5943",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 111.01449913812179,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8037_-1.5943",
+      "to_node": "N_53.8036_-1.5934",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 56.68293809371439,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8036_-1.5934",
+      "to_node": "N_53.8035_-1.5930",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 29.423455402584274,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5930",
+      "to_node": "N_53.8035_-1.5927",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 19.043393018340087,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5927",
+      "to_node": "N_53.8035_-1.5923",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 23.87428288899472,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8035_-1.5923",
+      "to_node": "N_53.8034_-1.5915",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 55.91649465738893,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5915",
+      "to_node": "N_53.8034_-1.5908",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 47.0436945464668,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8034_-1.5908",
+      "to_node": "N_53.8033_-1.5896",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 81.66725913248511,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.8033_-1.5896",
+      "to_node": "N_53.8022_-1.5806",
+      "strava_segment_id": 3949949,
+      "segment_name": "Redcote to Viaduct",
+      "effort_count": 178825,
+      "athlete_count": 28142,
+      "distance_metres": 621.6369765638835,
+      "weight": 3.553281455424084E-5
+    },
+    {
+      "from_node": "N_53.7774_-1.5841",
+      "to_node": "N_53.7773_-1.5703",
+      "strava_segment_id": 4255620,
+      "segment_name": "Porsche garage to Elland Road",
+      "effort_count": 1023,
+      "athlete_count": 274,
+      "distance_metres": 1630.9194542990613,
+      "weight": 0.0036363636363636364
+    },
+    {
+      "from_node": "N_53.7487_-1.6103",
+      "to_node": "N_53.7463_-1.6163",
+      "strava_segment_id": 12150952,
+      "segment_name": "Burial Time",
+      "effort_count": 17575,
+      "athlete_count": 2372,
+      "distance_metres": 490.67700310139384,
+      "weight": 4.2140750105351877E-4
+    },
+    {
+      "from_node": "N_53.7455_-1.5930",
+      "to_node": "N_53.7455_-1.5927",
+      "strava_segment_id": 22853070,
+      "segment_name": "Lewisham Park circuit (NE anti CW)",
+      "effort_count": 1719,
+      "athlete_count": 144,
+      "distance_metres": 347.1342644890483,
+      "weight": 0.006896551724137931
+    },
+    {
+      "from_node": "N_53.7843_-1.5232",
+      "to_node": "N_53.7819_-1.5223",
+      "strava_segment_id": 23008524,
+      "segment_name": "H2010 Sprint",
+      "effort_count": 131654,
+      "athlete_count": 15564,
+      "distance_metres": 270.3603300973731,
+      "weight": 6.424670735624799E-5
+    },
+    {
+      "from_node": "N_53.7819_-1.5223",
+      "to_node": "N_53.7820_-1.5222",
+      "strava_segment_id": 23008524,
+      "segment_name": "H2010 Sprint",
+      "effort_count": 131654,
+      "athlete_count": 15564,
+      "distance_metres": 5.681468537977463,
+      "weight": 6.424670735624799E-5
+    },
+    {
+      "from_node": "N_53.7777_-1.5121",
+      "to_node": "N_53.7779_-1.5122",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 21.38095408278576,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7779_-1.5122",
+      "to_node": "N_53.7781_-1.5123",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 21.629922754298878,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7781_-1.5123",
+      "to_node": "N_53.7798_-1.5147",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 244.1233574487082,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7798_-1.5147",
+      "to_node": "N_53.7805_-1.5161",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 119.86323978960013,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7805_-1.5161",
+      "to_node": "N_53.7810_-1.5167",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 67.18707588384086,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7810_-1.5167",
+      "to_node": "N_53.7826_-1.5200",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 280.3006845303639,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7826_-1.5200",
+      "to_node": "N_53.7827_-1.5202",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 22.197153752290518,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7827_-1.5202",
+      "to_node": "N_53.7830_-1.5207",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 45.738977489576676,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7830_-1.5207",
+      "to_node": "N_53.7830_-1.5210",
+      "strava_segment_id": 16363546,
+      "segment_name": "New path Knostrop bridge to bridge",
+      "effort_count": 90518,
+      "athlete_count": 11639,
+      "distance_metres": 15.923811926742301,
+      "weight": 8.59106529209622E-5
+    },
+    {
+      "from_node": "N_53.7908_-1.5287",
+      "to_node": "N_53.7887_-1.5264",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 302.65788648642905,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7887_-1.5264",
+      "to_node": "N_53.7886_-1.5264",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 5.598419319429658,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7886_-1.5264",
+      "to_node": "N_53.7885_-1.5264",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 13.359551264020348,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7885_-1.5264",
+      "to_node": "N_53.7884_-1.5264",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 4.496045189259729,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7884_-1.5264",
+      "to_node": "N_53.7883_-1.5264",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 19.005587083364695,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7883_-1.5264",
+      "to_node": "N_53.7881_-1.5263",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 21.360199182068833,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7881_-1.5263",
+      "to_node": "N_53.7880_-1.5262",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 12.593539182509062,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7880_-1.5262",
+      "to_node": "N_53.7877_-1.5258",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 45.431449819296084,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7877_-1.5258",
+      "to_node": "N_53.7875_-1.5257",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 13.883885290922432,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7875_-1.5257",
+      "to_node": "N_53.7875_-1.5256",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 9.111283194632357,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7875_-1.5256",
+      "to_node": "N_53.7873_-1.5255",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 16.160873295241934,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7873_-1.5255",
+      "to_node": "N_53.7871_-1.5254",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 25.096806022646593,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7871_-1.5254",
+      "to_node": "N_53.7869_-1.5252",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 32.93026345862574,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7869_-1.5252",
+      "to_node": "N_53.7866_-1.5249",
+      "strava_segment_id": 4939547,
+      "segment_name": "student halls to flyover",
+      "effort_count": 126442,
+      "athlete_count": 15755,
+      "distance_metres": 32.28737708618852,
+      "weight": 6.346788525006347E-5
+    },
+    {
+      "from_node": "N_53.7872_-1.4668",
+      "to_node": "N_53.7872_-1.4666",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 17.649656649015647,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4666",
+      "to_node": "N_53.7873_-1.4664",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 14.277571638590212,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7873_-1.4664",
+      "to_node": "N_53.7880_-1.4658",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 93.58237062324824,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7880_-1.4658",
+      "to_node": "N_53.7882_-1.4657",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 19.454397516383843,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7882_-1.4657",
+      "to_node": "N_53.7883_-1.4658",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 10.093415403856968,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7883_-1.4658",
+      "to_node": "N_53.7884_-1.4659",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 14.206433040607203,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4659",
+      "to_node": "N_53.7885_-1.4659",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 5.942874388207031,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4659",
+      "to_node": "N_53.7885_-1.4662",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 17.72606166696396,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4662",
+      "to_node": "N_53.7885_-1.4663",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 11.824262432846721,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4663",
+      "to_node": "N_53.7885_-1.4666",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 16.09926326411677,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4666",
+      "to_node": "N_53.7884_-1.4668",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 16.715961295684203,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4668",
+      "to_node": "N_53.7882_-1.4669",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 16.465014329601438,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7882_-1.4669",
+      "to_node": "N_53.7876_-1.4674",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 80.13743840809029,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7876_-1.4674",
+      "to_node": "N_53.7874_-1.4674",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 17.984189451579816,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7874_-1.4674",
+      "to_node": "N_53.7873_-1.4673",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 15.169134071345301,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7873_-1.4673",
+      "to_node": "N_53.7872_-1.4672",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 14.857372901554074,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4672",
+      "to_node": "N_53.7871_-1.4669",
+      "strava_segment_id": 6302787,
+      "segment_name": "Temple Newsam track one lap different start point",
+      "effort_count": 165081,
+      "athlete_count": 3458,
+      "distance_metres": 18.17426841895471,
+      "weight": 2.891008962127783E-4
+    },
+    {
+      "from_node": "N_53.7882_-1.4659",
+      "to_node": "N_53.7884_-1.4660",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.549755690947798,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4660",
+      "to_node": "N_53.7885_-1.4662",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 19.795478087494974,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4662",
+      "to_node": "N_53.7884_-1.4666",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.12942969596385,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4666",
+      "to_node": "N_53.7883_-1.4668",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 20.91013064013444,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7883_-1.4668",
+      "to_node": "N_53.7881_-1.4670",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 24.210881875351376,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7881_-1.4670",
+      "to_node": "N_53.7876_-1.4673",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 61.99728191387088,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7876_-1.4673",
+      "to_node": "N_53.7874_-1.4674",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.851503315374888,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7874_-1.4674",
+      "to_node": "N_53.7872_-1.4673",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 19.6200812275037,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4673",
+      "to_node": "N_53.7871_-1.4671",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 21.389938182133037,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.4671",
+      "to_node": "N_53.7871_-1.4668",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 20.636100834418166,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.4668",
+      "to_node": "N_53.7872_-1.4665",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.22277835471077,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4665",
+      "to_node": "N_53.7873_-1.4663",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 23.020596970084117,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7873_-1.4663",
+      "to_node": "N_53.7880_-1.4659",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 83.06352303052631,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7880_-1.4659",
+      "to_node": "N_53.7882_-1.4658",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.48022949320445,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7882_-1.4658",
+      "to_node": "N_53.7884_-1.4660",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 21.955401933684467,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4660",
+      "to_node": "N_53.7885_-1.4663",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.82568221302099,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7885_-1.4663",
+      "to_node": "N_53.7884_-1.4666",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 23.03289437667368,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.4666",
+      "to_node": "N_53.7883_-1.4669",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 22.15624724841893,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7883_-1.4669",
+      "to_node": "N_53.7876_-1.4674",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 86.32247276476542,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7876_-1.4674",
+      "to_node": "N_53.7874_-1.4675",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 21.621685696443986,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7874_-1.4675",
+      "to_node": "N_53.7872_-1.4673",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 23.597199658125874,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4673",
+      "to_node": "N_53.7871_-1.4670",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 21.519406513281936,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.4670",
+      "to_node": "N_53.7871_-1.4667",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 20.364696805093793,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.4667",
+      "to_node": "N_53.7872_-1.4664",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 21.545493791147887,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7872_-1.4664",
+      "to_node": "N_53.7874_-1.4663",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 20.072724338481706,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7874_-1.4663",
+      "to_node": "N_53.7881_-1.4658",
+      "strava_segment_id": 25189560,
+      "segment_name": "TN 800m",
+      "effort_count": 75527,
+      "athlete_count": 3029,
+      "distance_metres": 89.42956034887695,
+      "weight": 3.3003300330033004E-4
+    },
+    {
+      "from_node": "N_53.7889_-1.5268",
+      "to_node": "N_53.7887_-1.5266",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 32.0332061741471,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7887_-1.5266",
+      "to_node": "N_53.7884_-1.5263",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 35.20897076009017,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7884_-1.5263",
+      "to_node": "N_53.7883_-1.5262",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 10.532761699772443,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7883_-1.5262",
+      "to_node": "N_53.7880_-1.5261",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 29.778309819971717,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7880_-1.5261",
+      "to_node": "N_53.7876_-1.5258",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 39.77051925637803,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7876_-1.5258",
+      "to_node": "N_53.7875_-1.5258",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 17.138626514048212,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7875_-1.5258",
+      "to_node": "N_53.7874_-1.5257",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 8.492958052556062,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7874_-1.5257",
+      "to_node": "N_53.7873_-1.5256",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 5.5291554330578725,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7873_-1.5256",
+      "to_node": "N_53.7871_-1.5255",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 24.597743589383345,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.5255",
+      "to_node": "N_53.7871_-1.5254",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 7.2150399811812465,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7871_-1.5254",
+      "to_node": "N_53.7869_-1.5253",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 21.926517115558056,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7869_-1.5253",
+      "to_node": "N_53.7867_-1.5249",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 26.83489575728955,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7867_-1.5249",
+      "to_node": "N_53.7843_-1.5232",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 294.60288370076637,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7819_-1.5223",
+      "to_node": "N_53.7819_-1.5222",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 10.18582017133702,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7819_-1.5222",
+      "to_node": "N_53.7820_-1.5221",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 12.299151211112836,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7820_-1.5221",
+      "to_node": "N_53.7831_-1.5209",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 172.67977483146504,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7831_-1.5209",
+      "to_node": "N_53.7831_-1.5208",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 3.941931887329385,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7831_-1.5208",
+      "to_node": "N_53.7830_-1.5207",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 12.331986625936583,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7830_-1.5207",
+      "to_node": "N_53.7828_-1.5202",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 41.984782055675765,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7828_-1.5202",
+      "to_node": "N_53.7827_-1.5200",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 15.841042142660235,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7827_-1.5200",
+      "to_node": "N_53.7826_-1.5198",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 15.328222193901482,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7826_-1.5198",
+      "to_node": "N_53.7810_-1.5167",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 276.4307854299498,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7810_-1.5167",
+      "to_node": "N_53.7805_-1.5160",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 65.81451521600492,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7805_-1.5160",
+      "to_node": "N_53.7797_-1.5145",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 133.0273594318154,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7797_-1.5145",
+      "to_node": "N_53.7782_-1.5122",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 229.71245878728988,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7782_-1.5122",
+      "to_node": "N_53.7780_-1.5121",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 18.177930233495807,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7780_-1.5121",
+      "to_node": "N_53.7778_-1.5120",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 20.870425072280057,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7778_-1.5120",
+      "to_node": "N_53.7761_-1.5070",
+      "strava_segment_id": 21325365,
+      "segment_name": "Rusty Bridge to Shiny Bridge",
+      "effort_count": 53157,
+      "athlete_count": 8638,
+      "distance_metres": 466.66212424010945,
+      "weight": 1.1575413821044102E-4
+    },
+    {
+      "from_node": "N_53.7710_-1.4756",
+      "to_node": "N_53.7661_-1.4772",
+      "strava_segment_id": 23498944,
+      "segment_name": "Services to canal",
+      "effort_count": 12300,
+      "athlete_count": 3172,
+      "distance_metres": 607.3798479392644,
+      "weight": 3.151591553734636E-4
+    },
+    {
+      "from_node": "N_53.8000_-1.4824",
+      "to_node": "N_53.7966_-1.4736",
+      "strava_segment_id": 6438389,
+      "segment_name": "Selby Road Pain",
+      "effort_count": 7546,
+      "athlete_count": 1242,
+      "distance_metres": 700.7116449192694,
+      "weight": 8.045052292839903E-4
+    },
+    {
+      "from_node": "N_53.7439_-1.5016",
+      "to_node": "N_53.7443_-1.4916",
+      "strava_segment_id": 8776025,
+      "segment_name": "Northfield Place to Oldroyd Farm Lane",
+      "effort_count": 15955,
+      "athlete_count": 2190,
+      "distance_metres": 659.4641892382629,
+      "weight": 4.5641259698767686E-4
+    },
+    {
+      "from_node": "N_53.8313_-1.5909",
+      "to_node": "N_53.8316_-1.5909",
+      "strava_segment_id": 8972484,
+      "segment_name": "West Park ",
+      "effort_count": 48651,
+      "athlete_count": 1105,
+      "distance_metres": 1266.8518108746414,
+      "weight": 9.041591320072332E-4
+    },
+    {
+      "from_node": "N_53.8670_-1.5501",
+      "to_node": "N_53.8670_-1.5499",
+      "strava_segment_id": 9775555,
+      "segment_name": "Eccup Reservoir FULL loop",
+      "effort_count": 4595,
+      "athlete_count": 1833,
+      "distance_metres": 6171.281097819993,
+      "weight": 5.452562704471102E-4
+    },
+    {
+      "from_node": "N_53.8063_-1.5993",
+      "to_node": "N_53.8055_-1.5973",
+      "strava_segment_id": 11033348,
+      "segment_name": "Sprint between the sleeping policemen (the other way)",
+      "effort_count": 174337,
+      "athlete_count": 25953,
+      "distance_metres": 156.9523651971321,
+      "weight": 3.85297064036372E-5
+    },
+    {
+      "from_node": "N_53.8426_-1.5843",
+      "to_node": "N_53.8405_-1.5862",
+      "strava_segment_id": 7525882,
+      "segment_name": "Donkey Sanctuary Climb",
+      "effort_count": 28199,
+      "athlete_count": 5300,
+      "distance_metres": 291.6377774457238,
+      "weight": 1.8864365214110544E-4
+    },
+    {
+      "from_node": "N_53.8153_-1.5629",
+      "to_node": "N_53.8180_-1.5739",
+      "strava_segment_id": 8343444,
+      "segment_name": "Hyde Park to Skyrack ",
+      "effort_count": 116296,
+      "athlete_count": 31544,
+      "distance_metres": 803.0663294671048,
+      "weight": 3.1700744967506735E-5
+    },
+    {
+      "from_node": "N_53.8180_-1.5739",
+      "to_node": "N_53.8182_-1.5741",
+      "strava_segment_id": 8343444,
+      "segment_name": "Hyde Park to Skyrack ",
+      "effort_count": 116296,
+      "athlete_count": 31544,
+      "distance_metres": 32.264133984652865,
+      "weight": 3.1700744967506735E-5
+    },
+    {
+      "from_node": "N_53.8182_-1.5741",
+      "to_node": "N_53.8183_-1.5742",
+      "strava_segment_id": 8343444,
+      "segment_name": "Hyde Park to Skyrack ",
+      "effort_count": 116296,
+      "athlete_count": 31544,
+      "distance_metres": 12.327018746583228,
+      "weight": 3.1700744967506735E-5
+    },
+    {
+      "from_node": "N_53.8183_-1.5742",
+      "to_node": "N_53.8195_-1.5761",
+      "strava_segment_id": 8343444,
+      "segment_name": "Hyde Park to Skyrack ",
+      "effort_count": 116296,
+      "athlete_count": 31544,
+      "distance_metres": 196.7254879021528,
+      "weight": 3.1700744967506735E-5
+    },
+    {
+      "from_node": "N_53.8113_-1.5575",
+      "to_node": "N_53.8138_-1.5608",
+      "strava_segment_id": 24448944,
+      "segment_name": "Queen Vic. to Skate Park",
+      "effort_count": 161652,
+      "athlete_count": 30929,
+      "distance_metres": 358.1212024296479,
+      "weight": 3.233107015842224E-5
+    },
+    {
+      "from_node": "N_53.8192_-1.5750",
+      "to_node": "N_53.8183_-1.5741",
+      "strava_segment_id": 8621567,
+      "segment_name": "Climb an Oak on foot",
+      "effort_count": 114931,
+      "athlete_count": 21479,
+      "distance_metres": 120.58278276813385,
+      "weight": 4.6554934823091246E-5
+    },
+    {
+      "from_node": "N_53.8183_-1.5741",
+      "to_node": "N_53.8181_-1.5740",
+      "strava_segment_id": 8621567,
+      "segment_name": "Climb an Oak on foot",
+      "effort_count": 114931,
+      "athlete_count": 21479,
+      "distance_metres": 19.043519705082804,
+      "weight": 4.6554934823091246E-5
+    },
+    {
+      "from_node": "N_53.8181_-1.5740",
+      "to_node": "N_53.8181_-1.5739",
+      "strava_segment_id": 8621567,
+      "segment_name": "Climb an Oak on foot",
+      "effort_count": 114931,
+      "athlete_count": 21479,
+      "distance_metres": 9.831177938161591,
+      "weight": 4.6554934823091246E-5
+    },
+    {
+      "from_node": "N_53.8181_-1.5739",
+      "to_node": "N_53.8181_-1.5737",
+      "strava_segment_id": 8621567,
+      "segment_name": "Climb an Oak on foot",
+      "effort_count": 114931,
+      "athlete_count": 21479,
+      "distance_metres": 8.818744286225755,
+      "weight": 4.6554934823091246E-5
+    },
+    {
+      "from_node": "N_53.8181_-1.5737",
+      "to_node": "N_53.8175_-1.5713",
+      "strava_segment_id": 8621567,
+      "segment_name": "Climb an Oak on foot",
+      "effort_count": 114931,
+      "athlete_count": 21479,
+      "distance_metres": 173.40957134590428,
+      "weight": 4.6554934823091246E-5
+    },
+    {
+      "from_node": "N_53.8151_-1.6088",
+      "to_node": "N_53.8159_-1.6096",
+      "strava_segment_id": 14291280,
+      "segment_name": "Kirkstall Brewery Flyby",
+      "effort_count": 144009,
+      "athlete_count": 24743,
+      "distance_metres": 103.98755027884107,
+      "weight": 4.041383769802781E-5
+    },
+    {
+      "from_node": "N_53.8527_-1.6124",
+      "to_node": "N_53.8498_-1.6069",
+      "strava_segment_id": 5050942,
+      "segment_name": "Lights to Church Sprint",
+      "effort_count": 25679,
+      "athlete_count": 3482,
+      "distance_metres": 508.4781834634238,
+      "weight": 2.871088142405972E-4
+    },
+    {
+      "from_node": "N_53.8426_-1.5456",
+      "to_node": "N_53.8331_-1.5603",
+      "strava_segment_id": 8611730,
+      "segment_name": "street lane to stainbeck",
+      "effort_count": 25465,
+      "athlete_count": 4172,
+      "distance_metres": 1437.6661634753427,
+      "weight": 2.3963575365444525E-4
+    },
+    {
+      "from_node": "N_53.8126_-1.4903",
+      "to_node": "N_53.8099_-1.4892",
+      "strava_segment_id": 10676081,
+      "segment_name": "School run",
+      "effort_count": 6131,
+      "athlete_count": 689,
+      "distance_metres": 308.07038845332875,
+      "weight": 0.0014492753623188406
+    },
+    {
+      "from_node": "N_53.8549_-1.4844",
+      "to_node": "N_53.8485_-1.4711",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 4598.739001008785,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8485_-1.4711",
+      "to_node": "N_53.8484_-1.4710",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 18.548986307004498,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8484_-1.4710",
+      "to_node": "N_53.8483_-1.4709",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 8.488237749380058,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8483_-1.4709",
+      "to_node": "N_53.8473_-1.4702",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 123.41106231735917,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8473_-1.4702",
+      "to_node": "N_53.8465_-1.4697",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 89.09146896668713,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8465_-1.4697",
+      "to_node": "N_53.8460_-1.4693",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 68.36034405886579,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8460_-1.4693",
+      "to_node": "N_53.8456_-1.4692",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 43.10608743952631,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8456_-1.4692",
+      "to_node": "N_53.8454_-1.4691",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 21.38014039423304,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8454_-1.4691",
+      "to_node": "N_53.8452_-1.4691",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 20.015086796052934,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8452_-1.4691",
+      "to_node": "N_53.8449_-1.4692",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 32.41292306034926,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8449_-1.4692",
+      "to_node": "N_53.8447_-1.4692",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 23.360147908047637,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8447_-1.4692",
+      "to_node": "N_53.8548_-1.4845",
+      "strava_segment_id": 27473766,
+      "segment_name": "The Shadwell 10k",
+      "effort_count": 63,
+      "athlete_count": 26,
+      "distance_metres": 5064.621609241525,
+      "weight": 0.037037037037037035
+    },
+    {
+      "from_node": "N_53.8356_-1.4968",
+      "to_node": "N_53.8390_-1.4966",
+      "strava_segment_id": 5326376,
+      "segment_name": "What hill ?",
+      "effort_count": 196466,
+      "athlete_count": 17853,
+      "distance_metres": 430.5604507298453,
+      "weight": 5.600985773496135E-5
+    },
+    {
+      "from_node": "N_53.8429_-1.5327",
+      "to_node": "N_53.8426_-1.5047",
+      "strava_segment_id": 5885283,
+      "segment_name": "Street Lane",
+      "effort_count": 45284,
+      "athlete_count": 4979,
+      "distance_metres": 1953.0507129055081,
+      "weight": 2.0080321285140563E-4
+    },
+    {
+      "from_node": "N_53.8295_-1.5260",
+      "to_node": "N_53.8294_-1.5222",
+      "strava_segment_id": 3037121,
+      "segment_name": "Little Switzerland Climb ",
+      "effort_count": 17929,
+      "athlete_count": 2515,
+      "distance_metres": 337.9090887222993,
+      "weight": 3.97456279809221E-4
+    },
+    {
+      "from_node": "N_53.8317_-1.4939",
+      "to_node": "N_53.8346_-1.4967",
+      "strava_segment_id": 5486915,
+      "segment_name": "roundabout to cafe",
+      "effort_count": 111407,
+      "athlete_count": 15507,
+      "distance_metres": 374.8947146994841,
+      "weight": 6.448284756254837E-5
+    },
+    {
+      "from_node": "N_53.8290_-1.5052",
+      "to_node": "N_53.8326_-1.5044",
+      "strava_segment_id": 13836816,
+      "segment_name": "Princess Avenue uphill dash",
+      "effort_count": 63967,
+      "athlete_count": 7281,
+      "distance_metres": 402.62285526891577,
+      "weight": 1.3732491073880802E-4
+    },
+    {
+      "from_node": "N_53.8491_-1.5250",
+      "to_node": "N_53.8497_-1.5121",
+      "strava_segment_id": 26118591,
+      "segment_name": "1k down the Ring Road",
+      "effort_count": 21903,
+      "athlete_count": 2812,
+      "distance_metres": 864.0141789218585,
+      "weight": 3.5549235691432633E-4
+    },
+    {
+      "from_node": "N_53.8582_-1.5098",
+      "to_node": "N_53.8577_-1.5018",
+      "strava_segment_id": 10926734,
+      "segment_name": "500m ",
+      "effort_count": 53710,
+      "athlete_count": 3859,
+      "distance_metres": 528.8693646121666,
+      "weight": 2.5906735751295336E-4
+    },
+    {
+      "from_node": "N_53.8487_-1.4711",
+      "to_node": "N_53.8485_-1.4710",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 19.80358126860045,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8485_-1.4710",
+      "to_node": "N_53.8483_-1.4708",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 28.442921968226273,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8483_-1.4708",
+      "to_node": "N_53.8474_-1.4703",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 106.18558919237012,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8474_-1.4703",
+      "to_node": "N_53.8466_-1.4697",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 97.56915011885836,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8466_-1.4697",
+      "to_node": "N_53.8461_-1.4694",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 55.0468244284495,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8461_-1.4694",
+      "to_node": "N_53.8460_-1.4693",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 12.849139277453189,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8456_-1.4692",
+      "to_node": "N_53.8454_-1.4693",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 15.691197034027232,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8454_-1.4693",
+      "to_node": "N_53.8453_-1.4692",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 8.09931166535101,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8453_-1.4692",
+      "to_node": "N_53.8452_-1.4692",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 15.567289730438969,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8452_-1.4692",
+      "to_node": "N_53.8450_-1.4691",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 23.580185077571564,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8450_-1.4691",
+      "to_node": "N_53.8448_-1.4691",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 18.948616339018425,
+      "weight": 0.0015313935681470138
+    },
+    {
+      "from_node": "N_53.8448_-1.4691",
+      "to_node": "N_53.8445_-1.4691",
+      "strava_segment_id": 6441651,
+      "segment_name": "Hobberley Lane, uphill",
+      "effort_count": 2926,
+      "athlete_count": 652,
+      "distance_metres": 26.694844482840615,
+      "weight": 0.0015313935681470138
+    }
+  ]
+}

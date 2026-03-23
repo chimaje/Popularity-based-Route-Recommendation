@@ -4,10 +4,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.*;
+import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.graph.SimpleDirectedWeightedGraph;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.google.maps.model.LatLng;
 
 import proj.auth.Stravaauth;
+import proj.graph.GraphBuilder;
 import proj.model.Segment;
 import proj.service.SegmentService;
 import proj.util.PolylineDecoder;
@@ -20,6 +25,7 @@ import proj.util.Segmentdatastore;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        
         Stravaauth auth = new Stravaauth();
 
         if (args.length > 0 && args[0].equals("--auth")) {
@@ -32,6 +38,17 @@ public class Main {
 
         if (dataStore.cacheExists()) {
             loadAndDisplayCache(dataStore);
+            // CoordinateCleaner.clean(); one-time utility to round lat/lng values in the cached JSON
+            GraphBuilder builder = new GraphBuilder();
+
+            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> effortGraph = builder.build_Effortweighted_graph();
+            builder.saveGraph(effortGraph, "EFFORT");
+
+            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> athleteGraph = builder.build_Athleteweighted_graph();
+            builder.saveGraph(athleteGraph, "ATHLETE");
+        
+            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> combinedGraph = builder.build_Calculatedweighted_graph();
+            builder.saveGraph(combinedGraph, "COMBINED");
         } else {
             fetchAndProcessSegments(segmentService, dataStore);
         }
