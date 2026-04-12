@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 
@@ -11,7 +12,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.maps.model.LatLng;
 
-import proj.auth.Stravaauth;
 import proj.graph.GraphBuilder;
 import proj.model.Segment;
 import proj.service.SegmentService;
@@ -26,32 +26,41 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         
-        Stravaauth auth = new Stravaauth();
+        // Stravaauth auth = new Stravaauth();
 
-        if (args.length > 0 && args[0].equals("--auth")) {
-            auth.printAuthorizationUrl();
-            return;
-        }
+        // if (args.length > 0 && args[0].equals("--auth")) {
+        //     auth.printAuthorizationUrl();
+        //     return;
+        // }
 
-        SegmentService segmentService = new SegmentService(auth.getAccessToken());
-        Segmentdatastore dataStore = new Segmentdatastore();
+        // SegmentService segmentService = new SegmentService(auth.getAccessToken());
+        // Segmentdatastore dataStore = new Segmentdatastore();
 
-        if (dataStore.cacheExists()) {
-            loadAndDisplayCache(dataStore);
-            // CoordinateCleaner.clean(); one-time utility to round lat/lng values in the cached JSON
-            GraphBuilder builder = new GraphBuilder();
+        // if (dataStore.cacheExists()) {
+        //     loadAndDisplayCache(dataStore);
+        //     // CoordinateCleaner.clean(); one-time utility to round lat/lng values in the cached JSON
+        //     GraphBuilder builder = new GraphBuilder();
 
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> effortGraph = builder.build_Effortweighted_graph();
-            builder.saveGraph(effortGraph, "EFFORT");
+        //     SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> effortGraph = builder.build_Effortweighted_graph();
+        //     builder.saveGraph(effortGraph, "EFFORT");
 
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> athleteGraph = builder.build_Athleteweighted_graph();
-            builder.saveGraph(athleteGraph, "ATHLETE");
+        //     SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> athleteGraph = builder.build_Athleteweighted_graph();
+        //     builder.saveGraph(athleteGraph, "ATHLETE");
         
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> combinedGraph = builder.build_Calculatedweighted_graph();
-            builder.saveGraph(combinedGraph, "COMBINED");
-        } else {
-            fetchAndProcessSegments(segmentService, dataStore);
-        }
+        //     SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> combinedGraph = builder.build_Calculatedweighted_graph();
+        //     builder.saveGraph(combinedGraph, "COMBINED");
+        // } else {
+        //     fetchAndProcessSegments(segmentService, dataStore);
+        // }
+        GraphBuilder builder = new GraphBuilder();
+
+            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> efforts = builder.loadGraph("effort");
+
+        ConnectivityInspector<String, DefaultWeightedEdge> inspector = 
+            new ConnectivityInspector<>(efforts);
+
+        System.out.println("Is fully connected: " + inspector.isConnected());
+        System.out.println("Number of components: " + inspector.connectedSets().size());
     }
 
     /**

@@ -302,6 +302,36 @@ public class GraphBuilder {
         System.out.println("Saved " + graphType + " graph to " + outputFile);
     }
 
+    public SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> loadGraph(String graphType) throws IOException {
+        String inputFile = "leeds_graph_" + graphType.toLowerCase() + ".json";
+        String json = Files.readString(Path.of(inputFile));
+        JsonObject root = JsonParser.parseString(json).getAsJsonObject();
+
+        SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> graph = 
+            new SimpleDirectedWeightedGraph<>(DefaultWeightedEdge.class);
+
+        // Load nodes
+        JsonArray nodeArray = root.getAsJsonArray("nodes");
+        for (JsonElement el : nodeArray) {
+            JsonObject nodeObj = el.getAsJsonObject();
+            String nodeId = nodeObj.get("node_id").getAsString();
+            graph.addVertex(nodeId);
+        }
+
+        // Load edges
+        JsonArray edgeArray = root.getAsJsonArray("edges");
+        for (JsonElement el : edgeArray) {
+            JsonObject edgeObj = el.getAsJsonObject();
+            String fromNode = edgeObj.get("from_node").getAsString();
+            String toNode = edgeObj.get("to_node").getAsString();
+            double weight = edgeObj.get("weight").getAsDouble();
+
+            graph.addEdge(fromNode, toNode);
+            graph.setEdgeWeight(graph.getEdge(fromNode, toNode), weight);
+        }
+        return graph;
+    }
+
     public Map<String, GraphNode> getNodes() { return nodes; }
     public List<GraphEdge>        getEdges() { return edges; }
 
