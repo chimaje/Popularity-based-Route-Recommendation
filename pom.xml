@@ -4,6 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+    </parent>
+
     <groupId>popularity-route-recommendation</groupId>
     <artifactId>popularity-route-recommendation</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,7 +28,7 @@
             <artifactId>okhttp</artifactId>
             <version>4.12.0</version>
         </dependency>
-
+        
         <!-- JSON Parsing -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -48,6 +54,17 @@
             <artifactId>jgrapht-core</artifactId>
             <version>1.5.2</version>
         </dependency>
+
+        <!-- Spring Boot Web Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            
+        </dependency>
     </dependencies>
 
     <build>
@@ -63,6 +80,11 @@
                         </manifest>
                     </archive>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
