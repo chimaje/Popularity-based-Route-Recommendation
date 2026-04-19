@@ -61,6 +61,17 @@ public class Main {
 
         // System.out.println("Is fully connected: " + inspector.isConnected());
         // System.out.println("Number of components: " + inspector.connectedSets().size());
+
+        // List<Set<String>> components = inspector.connectedSets();
+        // components.sort((a, b) -> b.size() - a.size());
+        // Set<String> largestComponent = components.get(1);
+        // System.out.println("\nAll nodes in Component 1:");
+        // largestComponent.forEach(System.out::println);
+        // for (int i = 0; i < components.size(); i++) {
+        //     System.out.println("Component " + i + ": " + components.get(i).size() + " nodes");
+        //     // Print first node of each component so you can locate it on the map
+        //     System.out.println("  Start node: " + components.get(i).iterator().next());
+        // }
     }
 
     /**

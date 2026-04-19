@@ -237,6 +237,25 @@ public class GraphBuilder {
                     }
                     edges.add(edge);
                 }
+                if (graph.getEdge(toId, fromId) == null) {
+                DefaultWeightedEdge reverse = graph.addEdge(toId, fromId);
+                if (reverse != null) {
+                    switch (weighttype) {
+                        case "EFFORT"   -> graph.setEdgeWeight(reverse, edge.effortWeight);
+                        case "ATHLETE"  -> graph.setEdgeWeight(reverse, edge.athleteWeight);
+                        case "COMBINED" -> graph.setEdgeWeight(reverse, edge.combinedWeight);
+                    }
+                    // Add reverse edge to edges list too for saving
+                    GraphEdge reverseEdge = new GraphEdge(
+                        toId, fromId,
+                        seg.id, seg.name,
+                        seg.effortCount, seg.athleteCount,
+                        subDist
+                    );
+                    edges.add(reverseEdge);
+                }
+            }
+
             }
 
 

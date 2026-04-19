@@ -7,8 +7,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.jgrapht.GraphPath;
+import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
@@ -43,24 +46,37 @@ public class RouteGenerate {
 
     private String findNearestNode(double lat, double lng, String weightType) {
         var nodes = nodeMeta.get(weightType);
-        if (nodes == null) return null;
-        String nearest = null;
-        double minDist = Double.MAX_VALUE;
-        for (var entry : nodes.entrySet()) {
-            double[] coord = entry.getValue();
-            double dist = Math.hypot(coord[0] - lat, coord[1] - lng);
-            if (dist < minDist) {
-                minDist = dist;
-                nearest = entry.getKey();
-            }
+    if (nodes == null) return null;
+
+    String nearest = null;
+    double minDist  = Double.MAX_VALUE;
+
+    for (var entry : nodes.entrySet()) {
+        double[] coord = entry.getValue();
+        // Haversine approximation — accounts for lng compression at Leeds latitude
+        double dLat = Math.toRadians(coord[0] - lat);
+        double dLng = Math.toRadians(coord[1] - lng);
+        double a = Math.sin(dLat/2) * Math.sin(dLat/2)
+                 + Math.cos(Math.toRadians(lat))
+                 * Math.cos(Math.toRadians(coord[0]))
+                 * Math.sin(dLng/2) * Math.sin(dLng/2);
+        double dist = 6371000 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+        if (dist < minDist) {
+            minDist = dist;
+            nearest = entry.getKey();
         }
-        return nearest;
+    }
+    return nearest;
     }
 
+
     public RouteResult generateroute(double startLat, double startLng, double endLat, double endLng, String weightType) {
+        System.out.println(startLat+","+startLng+","+endLat+","+endLng);
         String startNode = findNearestNode(startLat, startLng, weightType);
         String endNode = findNearestNode(endLat, endLng, weightType);
-    
+            System.out.println(startLat+","+startLng+"Start snapped to: " + startNode);
+            System.out.println(endLat+","+endLng+"End snapped to:   " + endNode);
             RouteResult result = new RouteResult();
             var graph = graphs.get(weightType);
             var nodes = nodeMeta.get(weightType);
@@ -78,6 +94,27 @@ public class RouteGenerate {
                 result.found = false;
                 result.message = "Node not found in graph.";
                 return result;
+            }
+            System.out.println("Graph Loaded: " + weightType);
+            System.out.println("Graph loaded - vertices: " + graph.vertexSet().size());
+            System.out.println("Graph loaded - edges: " + graph.edgeSet().size());
+            System.out.println("Start node exists: " + graph.containsVertex(startNode));
+            System.out.println("End node exists: " + graph.containsVertex(endNode));
+            System.out.println("Start node passed in: '" + startNode + "'");
+            System.out.println("End node passed in: '" + endNode + "'");
+            
+            ConnectivityInspector<String, DefaultWeightedEdge> inspector =
+                new ConnectivityInspector<>(graph);
+
+            System.out.println("Components in loaded graph: " + inspector.connectedSets().size());
+
+            List<Set<String>> components = new ArrayList<>(inspector.connectedSets());
+            components.sort((a, b) -> b.size() - a.size());
+
+            for (int i = 0; i < Math.min(5, components.size()); i++) {
+                System.out.println("Component " + i + ": " + components.get(i).size() + " nodes");
+                System.out.println("  Contains start? " + components.get(i).contains(startNode));
+                System.out.println("  Contains end?   " + components.get(i).contains(endNode));
             }
 
             //Calculate populary route using Dijkstra's algorithm
@@ -227,5 +264,49 @@ public class RouteGenerate {
                 throw new IOException("Failed to load graph: " + fileName, e);
             }
         }
+
+        
+    
     }
+
+    public List<Map<String, Object>> getNodes(String weightType) {
+    var nodes = nodeMeta.get(weightType);
+    var graph = graphs.get(weightType);
+    if (nodes == null || graph == null) return List.of();
+
+    // Build component map — nodeId → componentId (sorted largest first)
+    ConnectivityInspector<String, DefaultWeightedEdge> inspector =
+        new ConnectivityInspector<>(graph);
+
+    List<Set<String>> components = new ArrayList<>(inspector.connectedSets());
+    components.sort((a, b) -> b.size() - a.size());
+
+    Map<String, Integer> nodeToComponent = new HashMap<>();
+    Map<String, Integer> componentSize   = new HashMap<>();
+
+    for (int i = 0; i < components.size(); i++) {
+        int idx = i;
+        components.get(i).forEach(nodeId -> {
+            nodeToComponent.put(nodeId, idx);
+            componentSize.put(nodeId, components.get(idx).size());
+        });
+    }
+
+    return nodes.entrySet().stream()
+        .map(entry -> {
+            double[] coord    = entry.getValue();
+            String   nodeId   = entry.getKey();
+            int      compId   = nodeToComponent.getOrDefault(nodeId, -1);
+            int      compSize = componentSize.getOrDefault(nodeId, 0);
+
+            Map<String, Object> map = new HashMap<>();
+            map.put("nodeId",         nodeId);
+            map.put("lat",            coord[0]);
+            map.put("lng",            coord[1]);
+            map.put("componentId",    compId);
+            map.put("componentSize",  compSize);
+            return map;
+        })
+        .collect(Collectors.toList());
+}
 }
