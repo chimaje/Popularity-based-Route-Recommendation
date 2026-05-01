@@ -3,7 +3,9 @@ package proj;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 
@@ -41,14 +43,58 @@ public class Main {
             // CoordinateCleaner.clean(); one-time utility to round lat/lng values in the cached JSON
             GraphBuilder builder = new GraphBuilder();
 
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> effortGraph = builder.build_Effortweighted_graph();
-            builder.saveGraph(effortGraph, "EFFORT");
+                SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> effortGraph = builder.build_Effortweighted_graph();
+                builder.saveGraph(effortGraph, "EFFORT");
 
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> athleteGraph = builder.build_Athleteweighted_graph();
-            builder.saveGraph(athleteGraph, "ATHLETE");
-        
-            SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> combinedGraph = builder.build_Calculatedweighted_graph();
-            builder.saveGraph(combinedGraph, "COMBINED");
+                SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> athleteGraph = builder.build_Athleteweighted_graph();
+                builder.saveGraph(athleteGraph, "ATHLETE");
+            
+                SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> combinedGraph = builder.build_Calculatedweighted_graph();
+                builder.saveGraph(combinedGraph, "COMBINED");
+
+                 SimpleDirectedWeightedGraph<String, DefaultWeightedEdge> efforts = builder.loadGraph("effort");
+
+                ConnectivityInspector<String, DefaultWeightedEdge> inspector = 
+                    new ConnectivityInspector<>(efforts);
+                
+                System.out.println("Is fully connected: " + inspector.isConnected());
+                System.out.println("Number of components: " + inspector.connectedSets().size());
+
+                List<Set<String>> components = inspector.connectedSets();
+                components.sort((a, b) -> Integer.compare(b.size(), a.size()));
+                System.out.println("\n--- Metric 2 ---");
+                System.out.println("Total nodes: "      + efforts.vertexSet().size());
+                System.out.println("Total components: " + components.size());
+                System.out.println("Largest component: "+ components.get(0).size() + " nodes");
+                System.out.println("Coverage: "         + String.format("%.1f%%",
+                    (components.get(0).size() / (double) efforts.vertexSet().size()) * 100));
+
+                System.out.println("\n--- Metric 6: Intersection Connectivity ---");
+                    System.out.println("Intersection threshold (metres): 15.0");
+
+                    // Component breakdown
+                    int isolatedCount = 0;
+                    for (Set<String> comp : components) {
+                        if (comp.size() == 2) isolatedCount++;
+                    }
+                    System.out.println("Components with >2 nodes: " + 
+                        components.stream().filter(c -> c.size() > 2).count());
+                    System.out.println("Isolated 2-node components: " + isolatedCount);
+
+                System.out.println("\n--- Metric 7: Segment Fragmentation ---");
+                System.out.println("Total edges in graph: " + efforts.edgeSet().size());
+                System.out.println("Average edges per segment: " +
+                    String.format("%.1f", efforts.edgeSet().size() / 39.0));
+                System.out.println("Total nodes created: " + efforts.vertexSet().size());
+                System.out.println("Average nodes per segment: " +
+                    String.format("%.1f", efforts.vertexSet().size() / 39.0));
+                // for (int i = 0; i < components.size(); i++) {
+                //     System.out.println("Component " + i + ": " + components.get(i).size() + " nodes");
+                //     // Print first node of each component so you can locate it on the map
+                //     System.out.println("  Start node: " + components.get(i).iterator().next());
+                // }
+
+            
         } else {
             fetchAndProcessSegments(segmentService, dataStore);
         }

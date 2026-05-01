@@ -31,7 +31,7 @@ public class GraphBuilder {
     // 15m threshold for considering points as intersecting 
     //Strava GPS accuracy is typically within 5-10 metres in open areas.
 
-    private static final double intersection_metres = 15.0; 
+    private static final double intersection_metres = 15.0; //** this might have cause an issue with connecting between 2 components */
 
      private final Map<String, GraphNode> nodes = new LinkedHashMap<>();
     private final List<GraphEdge>        edges = new ArrayList<>();
@@ -255,7 +255,6 @@ public class GraphBuilder {
                     edges.add(reverseEdge);
                 }
             }
-
             }
 
 

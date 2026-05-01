@@ -1,8 +1,6 @@
 package proj.util;
 
 public class Proximityutils{
-
-
     // calulating distance between 2 geo coordinates using Haversine formula
     //
     public static double haversine(double lat1, double lon1, double lat2, double lon2) {

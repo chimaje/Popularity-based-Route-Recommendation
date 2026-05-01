@@ -250,7 +250,7 @@ function App() {
         position: 'absolute', top: 10, left: 10, zIndex: 1000,
         padding: '10px', background: 'white', borderRadius: '4px',
         boxShadow: '0 1px 5px rgba(0,0,0,0.3)', fontSize: '13px',
-        maxWidth: '365px'
+        maxWidth: '410px'
       }}>
 
         {/* Controls row */}
@@ -295,19 +295,15 @@ function App() {
         {/* Weight type row */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
           <span style={{ color: '#555' }}>Route Weighting:</span>
-          {['ATHLETE', 'EFFORT', 'COMBINED'].map(type => (
-            <button
-              key={type}
-              onClick={() => setWeightType(type)}
-              style={{
-                backgroundColor: weightType === type ? '#4CAF50' : '#f0f0f0',
-                color:           weightType === type ? 'white' : 'black',
-                border: '1px solid #ccc', padding: '4px 10px', cursor: 'pointer',
-              }}
-            >
-              {type}
-            </button>
-          ))}
+          {['ATHLETE', 'EFFORT', 'COMBINED',].map(type => (
+    <button key={type} onClick={() => setWeightType(type)} style={{
+        backgroundColor: weightType === type ? '#4CAF50' : '#f0f0f0',
+        color: weightType === type ? 'white' : 'black',
+        border: '1px solid #ccc', padding: '4px 10px', cursor: 'pointer',
+    }}>
+        {type}
+    </button>
+))}
         </div>
 
         {/* Warning */}
@@ -331,21 +327,14 @@ function App() {
             {route.edges?.length > 0 && (
               <div style={{ marginTop: '4px' }}>
                 <strong>Segments:</strong>
-                {route.edges.map((e, i) => (
-                   weightType === 'ATHLETE' ? (
-                    <div key={i} style={{ paddingLeft: '10px', color: '#444' }}>
-                    - {e.segmentName} ({e.athleteCount?.toLocaleString()} athletes)
-                  </div>
-                  ):weightType === 'EFFORT' ? (
-                    <div key={i} style={{ paddingLeft: '10px', color: '#444' }}>
-                    - {e.segmentName} ({e.effortCount?.toLocaleString()} efforts)
-                  </div>
-                  ):(
-                    <div key={i} style={{ paddingLeft: '10px', color: '#444' }}>
-                    - {e.segmentName} (weight: {e.weight.toLocaleString()})
-                  </div>
-                  )
-                ))}
+                {route.edges?.map((e, i) => (
+    <div key={i} style={{ paddingLeft: '10px', color: '#444' }}>
+        {weightType === 'ATHLETE'  && `- ${e.segmentName} (${e.athleteCount?.toLocaleString()} athletes)`}
+        {weightType === 'EFFORT'   && `- ${e.segmentName} (${e.effortCount?.toLocaleString()} efforts)`}
+        {weightType === 'COMBINED' && `- ${e.segmentName} (${Math.round((e.effortCount * 0.7) + (e.athleteCount * 0.3)).toLocaleString()} combined score)`}
+        
+    </div>
+))}
               </div>
             )}
           </div>
